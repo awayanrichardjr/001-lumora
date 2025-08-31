@@ -1,0 +1,121 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.7rem;
+  background-color: var(--primary-color);
+  border-radius: 1.7rem;
+}
+.navigation :where(.menu) {
+  display: none;
+}
+.navigation :where(.menu-links) {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+
+.navigation :where(.links) {
+  display: flex;
+  align-items: center;
+}
+
+.navigation :is(a) {
+  display: flex;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border-radius: 1rem;
+  color: black;
+  transition: 0.2s;
+}
+
+.navigation :is(a):hover {
+  background-color: var(--secondary-color);
+}
+
+.navigation :where(.logo) :is(a) {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 900;
+}
+
+.navigation :where(.profile-search) {
+  display: flex;
+  align-items: center;
+}
+
+.navigation :is(.profile-search) form {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 0.7rem 1rem;
+  border-radius: 2rem;
+  gap: 0.5rem;
+  input {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.navigation :where(.profile-search) li:nth-child(2) a {
+  padding: 1rem;
+}
+
+.navigation :where(.profile-search) img {
+  width: 40px;
+  border-radius: 2rem;
+}
+.navigation :where(.menu-links) img {
+  width: 40px;
+  border-radius: 2rem;
+}
+.navigation :where(.menu-links) :has(img) {
+  justify-self: center;
+}
+/* .navigation :where(.menu-links) :has(span) {
+  justify-self: end;
+  cursor: pointer;
+} */
+
+@media screen and (max-width: 1111px) {
+  .navigation :where(.links, .profile-search > li:nth-child(2)) {
+    display: none;
+  }
+  .navigation :where(.menu) {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* .navigation {
+    justify-content: center;
+  } */
+  .navigation :where(.profile-search) {
+    flex-grow: 1;
+    display: flex;
+    li:nth-child(1) {
+      flex-grow: 1;
+    }
+    input {
+      flex-grow: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navigation :where(.logo) :is(a) p {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navigation :where(.profile-search) {
+    flex-grow: unset;
+    li:nth-child(1) {
+      display: none;
+    }
+  }
+}

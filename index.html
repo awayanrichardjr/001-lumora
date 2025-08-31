@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- global -->
+    <link rel="stylesheet" href="css/global/root.css" />
+    <link rel="stylesheet" href="css/global/global.css" />
+
+    <!-- components -->
+    <link rel="stylesheet" href="css/components/nav.css" />
+    <link rel="stylesheet" href="css/components/header.css" />
+    <!-- <link rel="stylesheet" href="css/components/main.css" /> -->
+    <!-- <link rel="stylesheet" href="css/components/footer.css" /> -->
+
+    <!-- google fonts icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="navigation">
+      <ul class="logo">
+        <li>
+          <a href="#">
+            <span class="material-symbols-rounded">home_app_logo</span>
+            <p>LUMORA</p>
+          </a>
+        </li>
+      </ul>
+      <ul class="links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Accessores</a></li>
+        <li><a href="#">Smart home</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+
+      <!-- navigation script -->
+      <script src="script/nav.js"></script>
+      <ul class="profile-search">
+        <li>
+          <form action="" method="post">
+            <span class="material-symbols-rounded">search</span>
+            <input type="search" name="search" placeholder="Search" />
+            <!-- <input type="submit" value="Search" id="search-btn" /> -->
+          </form>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/profile.jpg" alt="profile" />
+          </a>
+        </li>
+        <li class="menu" onmouseenter="menuToggle()" id="menu-btn">
+          <a href=""><span class="material-symbols-rounded">menu</span></a>
+        </li>
+      </ul>
+      <ul class="menu-links" id="menu-links" onmouseleave="closeMenu()">
+        <!-- <li id="close-btn">
+          <span class="material-symbols-rounded">close</span>
+        </li> -->
+        <li>
+          <a href="#">
+            <img src="img/profile.jpg" alt="profile" />
+          </a>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Accessores</a></li>
+        <li><a href="#">Smart home</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+    </nav>
+    <!-- header -->
+    <header class="header">
+      <section class="container">
+        <h1 class="heading1">YOUR SMART HOME, YOUR WAY.</h1>
+        <button class="viewVideo">
+          <p>View video</p>
+          <span class="material-symbols-rounded">arrow_right</span>
+        </button>
+      </section>
+      <section class="container1">
+        <ul>
+          <li><button onclick="room00()" class="room00">Room 00</button></li>
+          <li><button onclick="room01()" class="room01">Room 01</button></li>
+          <li><button onclick="room02()" class="room02">Room 02</button></li>
+        </ul>
+        <div class="mini-sidebar">
+          <div class="sidebar-btn">
+            <span class="material-symbols-rounded">chevron_left</span>
+          </div>
+        </div>
+      </section>
+      <script src="script/header.js"></script>
+    </header>
+  </body>
+</html>
