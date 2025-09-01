@@ -70,7 +70,7 @@
   background-color: var(--secondary-color);
 }
 
-/* todo mini sidebar*/
+/* mini sidebar*/
 .header :where(.container1) .mini-sidebar {
   position: relative;
   height: 100px;
