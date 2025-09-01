@@ -31,7 +31,6 @@
   transition: 0.2s;
   background-color: var(--primary-color);
 }
-
 .header :is(.viewVideo):hover {
   background-color: var(--secondary-color);
 }
@@ -51,7 +50,6 @@
   flex-flow: column nowrap;
   justify-content: space-between;
 }
-
 .header :where(.container1) ul {
   display: flex;
   flex-flow: row-reverse nowrap;
@@ -72,13 +70,13 @@
   background-color: var(--secondary-color);
 }
 
+/* todo mini sidebar*/
 .header :where(.container1) .mini-sidebar {
   height: 100px;
 
   display: flex;
   justify-content: end;
 }
-
 .header :where(.mini-sidebar) .sidebar-btn {
   background-color: var(--primary-color);
   border-radius: 1rem;
@@ -94,7 +92,6 @@
 
   transition: 0.2s;
 }
-
 .header :where(.mini-sidebar) .sidebar-btn:hover {
   background-color: var(--secondary-color);
 }
