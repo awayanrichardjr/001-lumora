@@ -79,10 +79,6 @@
 .navigation :where(.menu-links) :has(img) {
   justify-self: center;
 }
-/* .navigation :where(.menu-links) :has(span) {
-  justify-self: end;
-  cursor: pointer;
-} */
 
 @media screen and (max-width: 1111px) {
   .navigation :where(.links, .profile-search > li:nth-child(2)) {
@@ -93,9 +89,6 @@
     cursor: pointer;
   }
 
-  /* .navigation {
-    justify-content: center;
-  } */
   .navigation :where(.profile-search) {
     flex-grow: 1;
     display: flex;
