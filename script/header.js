@@ -12,10 +12,21 @@ function room02() {
 }
 
 function spanValue() {
-  let spanValue = document.getElementById("chevron_left").innerHTML;
+  const sidebarContent = document.getElementById("sidebar-content");
+  const chevronLeft = document.getElementById("chevron_left");
+
+  let spanValue = chevronLeft.innerHTML;
   if (spanValue === "chevron_left") {
-    document.getElementById("chevron_left").innerHTML = "chevron_right";
+    chevronLeft.innerHTML = "chevron_right";
+
+    sidebarContent.style.width = "300px";
+    sidebarContent.style.opacity = "1";
+    sidebarContent.style.paddingInlineStart = "1rem";
+    sidebarContent.style.paddingInlineEnd = "4rem";
+    sidebarContent.style.transition = "0.5s";
   } else {
-    document.getElementById("chevron_left").innerHTML = "chevron_left";
+    chevronLeft.innerHTML = "chevron_left";
+    sidebarContent.style.width = "0";
+    sidebarContent.style.opacity = "0";
   }
 }
