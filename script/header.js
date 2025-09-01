@@ -19,7 +19,7 @@ function spanValue() {
   if (spanValue === "chevron_left") {
     chevronLeft.innerHTML = "chevron_right";
 
-    sidebarContent.style.width = "300px";
+    sidebarContent.style.width = "350px";
     sidebarContent.style.opacity = "1";
     sidebarContent.style.paddingInlineStart = "1rem";
     sidebarContent.style.paddingInlineEnd = "4rem";
