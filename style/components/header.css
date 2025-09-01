@@ -34,6 +34,12 @@
   padding: 1rem 2rem;
   border: none;
   background-color: var(--primary-color);
+
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.3rem;
+
+  transition: 0.1s;
 }
 
 .header :where(.container) {
@@ -41,6 +47,9 @@
 
   display: flex;
   flex-flow: column nowrap;
+}
+.header :where(.rooms) li > button:hover {
+  background-color: var(--secondary-color);
 }
 
 /* heading one */
@@ -134,4 +143,13 @@
 }
 
 @media screen and (max-width: 768px) {
+  .header :where(.rooms) {
+    gap: 0.3rem;
+  }
+  .header :where(.rooms) li > button {
+    padding: 0.7rem;
+  }
+  .header :where(.rooms) button > p:nth-child(1) {
+    display: none;
+  }
 }
