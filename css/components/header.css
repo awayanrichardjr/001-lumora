@@ -43,7 +43,6 @@
 }
 
 .header :where(.container1) {
-  /* background-color: red; */
   height: inherit;
   flex-grow: 1;
   padding: 1rem;
@@ -74,12 +73,10 @@
 }
 
 .header :where(.container1) .mini-sidebar {
-  /* background-color: blue; */
   height: 100px;
 
   display: flex;
   justify-content: end;
-  /* padding: 1rem; */
 }
 
 .header :where(.mini-sidebar) .sidebar-btn {
