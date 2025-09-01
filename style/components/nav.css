@@ -5,6 +5,8 @@
   padding: 1rem 1.7rem;
   background-color: var(--primary-color);
   border-radius: 1.7rem;
+
+  z-index: 1000;
 }
 .navigation :where(.menu) {
   display: none;

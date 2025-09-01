@@ -1,11 +1,10 @@
 .header {
   border-radius: 1.7rem;
-  padding: 1rem 2rem;
-  height: 350px;
+  min-height: 400px;
 
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: start;
   align-items: center;
 
   background-image: url("/img/rooms/room00.webp");
@@ -16,8 +15,42 @@
   background-blend-mode: multiply;
 
   transition: 0.2s;
+
+  position: relative;
 }
 
+.header :where(.rooms) {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 999;
+
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  gap: 1rem;
+}
+.header :where(.rooms) li > button {
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: var(--primary-color);
+}
+
+.header :where(.container) {
+  padding: 1rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/* heading one */
+.header :is(.heading1) {
+  font-size: 48px;
+  color: white;
+  max-width: 450px;
+}
+
+/* view video button */
 .header :is(.viewVideo) {
   background-color: var(--primary-color);
   display: flex;
@@ -35,46 +68,13 @@
   background-color: var(--secondary-color);
 }
 
-.header :is(.heading1) {
-  font-size: 48px;
-  color: white;
-  width: 450px;
-}
-
-.header :where(.container1) {
-  height: inherit;
-  flex-grow: 1;
-  padding: 1rem;
-
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-}
-.header :where(.container1) ul {
-  display: flex;
-  flex-flow: row-reverse nowrap;
-  justify-content: end;
-  align-items: center;
-  gap: 1rem;
-}
-
-.header :where(.container1) ul li > button {
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-
-  transition: 0.2s;
-  white-space: nowrap;
-  background-color: var(--primary-color);
-}
-.header :where(.container1) ul li > button:hover {
-  background-color: var(--secondary-color);
-}
-
 /* mini sidebar*/
-.header :where(.container1) .mini-sidebar {
-  position: relative;
+.header .mini-sidebar {
   height: 100px;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 999;
 
   display: flex;
   justify-content: end;
@@ -100,8 +100,6 @@
 .header :where(.mini-sidebar) .sidebar-btn:hover {
   background-color: var(--secondary-color);
 }
-
-/* sidebar content */
 .header :where(.sidebar-content) {
   display: flex;
   flex-flow: row nowrap;
@@ -133,4 +131,7 @@
       white-space: nowrap;
     }
   }
+}
+
+@media screen and (max-width: 1024px) {
 }

@@ -76,6 +76,23 @@
 
     <!-- header -->
     <header class="header">
+      <ul class="rooms">
+        <li>
+          <button onclick="room00()" class="room00">
+            <p>Room 00</p>
+          </button>
+        </li>
+        <li>
+          <button onclick="room01()" class="room01">
+            <p>Room 01</p>
+          </button>
+        </li>
+        <li>
+          <button onclick="room02()" class="room02">
+            <p>Room 02</p>
+          </button>
+        </li>
+      </ul>
       <section class="container">
         <h1 class="heading1">YOUR SMART HOME, YOUR WAY.</h1>
         <button class="viewVideo">
@@ -83,30 +100,24 @@
           <span class="material-symbols-rounded">arrow_right</span>
         </button>
       </section>
-      <section class="container1">
-        <ul>
-          <li><button onclick="room00()" class="room00">Room 00</button></li>
-          <li><button onclick="room01()" class="room01">Room 01</button></li>
-          <li><button onclick="room02()" class="room02">Room 02</button></li>
-        </ul>
-        <!-- todo -->
-        <div class="mini-sidebar">
-          <div class="sidebar-content" id="sidebar-content">
-            <img src="img/rooms/room00.webp" alt="room00" />
-            <div class="sidebar-details">
-              <p>Camera</p>
-              <br />
-              <p>Camera on Cafe n4</p>
-              <p>12:00 - 5:00</p>
-            </div>
-          </div>
-          <div class="sidebar-btn" onclick="spanValue()">
-            <span class="material-symbols-rounded" id="chevron_left"
-              >chevron_left</span
-            >
+
+      <!-- mini sidebar -->
+      <div class="mini-sidebar">
+        <div class="sidebar-content" id="sidebar-content">
+          <img src="img/rooms/room00.webp" alt="room00" />
+          <div class="sidebar-details">
+            <p>Camera</p>
+            <br />
+            <p>Camera on Cafe n4</p>
+            <p>12:00 - 5:00</p>
           </div>
         </div>
-      </section>
+        <div class="sidebar-btn" onclick="spanValue()">
+          <span class="material-symbols-rounded" id="chevron_left"
+            >chevron_left</span
+          >
+        </div>
+      </div>
       <script src="script/header.js"></script>
     </header>
   </body>
