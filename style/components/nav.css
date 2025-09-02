@@ -34,7 +34,7 @@
   transition: 0.2s;
 }
 
-.navigation :where(.links) :is(a):hover {
+.navigation :where(.links, .menu-links) :is(a):hover {
   background-color: var(--secondary-color);
 }
 
