@@ -2,9 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.7rem;
   background-color: var(--primary-color);
-  border-radius: 1.7rem;
+  border-radius: 1rem;
 
   z-index: 1000;
 }
@@ -35,7 +34,7 @@
   transition: 0.2s;
 }
 
-.navigation :is(a):hover {
+.navigation :where(.links) :is(a):hover {
   background-color: var(--secondary-color);
 }
 
