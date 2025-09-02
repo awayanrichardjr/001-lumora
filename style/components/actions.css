@@ -3,7 +3,6 @@
 
 .actions :where(.container) {
   background-color: var(--primary-color);
-  width: 500px;
 
   display: flex;
 
