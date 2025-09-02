@@ -1,6 +1,54 @@
 :root {
   --primary-color: #e6e6e6;
   --secondary-color: #d9d9d9;
+  --tritary-color: #cccccc;
   --background-color: #ffffff;
   --text-color: #000000;
+
+  --color-100: #ffffff; /* background color */
+  --color-95: #f2f2f2;
+  --color-90: #e6e6e6; /* primary color */
+  --color-85: #d9d9d9; /* secondary color */
+  --color-80: #cccccc; /* tritary color */
+  --color-75: #bfbfbf;
+  --color-70: #b3b3b3;
+  --color-65: #a6a6a6;
+  --color-60: #999999;
+  --color-55: #8c8c8c;
+  --color-50: #808080;
+  --color-45: #737373;
+  --color-40: #666666;
+  --color-35: #595959;
+  --color-30: #4d4d4d;
+  --color-25: #404040;
+  --color-20: #333333;
+  --color-15: #262626;
+  --color-10: #1a1a1a;
+  --color-5: #0d0d0d;
+  --color-0: #000000; /* text color */
 }
+
+/*
+primary color
+secondary color
+tritary color
+quaternary color
+quinary color
+senary color
+septenary color
+octonary color
+nonary color
+denary color
+undenary color
+duodenary color
+tredenary color
+quattuordenary color
+quindenary color
+sexdenary color
+septendenary color
+octodenary color
+nonary color
+vigenary color
+background color
+text color
+*/
