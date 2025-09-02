@@ -27,9 +27,9 @@
 
 .navigation :is(a) {
   display: flex;
-  padding: 1rem 2rem;
+  padding: 1rem;
   background-color: transparent;
-  border-radius: 1rem;
+  border-radius: 2rem;
   color: var(--text-color);
   transition: 0.2s;
 }
@@ -79,7 +79,7 @@
   justify-self: center;
 }
 
-@media screen and (max-width: 1111px) {
+@media screen and (max-width: 900px) {
   .navigation :where(.links, .profile-search > li:nth-child(2)) {
     display: none;
   }
