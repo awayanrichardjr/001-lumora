@@ -1,7 +1,9 @@
+const menuLinks = document.getElementById("menu-links");
+
 function menuToggle() {
-  document.getElementById("menu-links").style.display = "block";
+  menuLinks.style.display = "block";
 }
 
 function closeMenu() {
-  document.getElementById("menu-links").style.display = "none";
+  menuLinks.style.display = "none";
 }
