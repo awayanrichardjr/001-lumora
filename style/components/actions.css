@@ -100,3 +100,32 @@
   width: 100%;
   border-radius: 1rem;
 }
+
+/* container2 */
+.actions :where(.container2) {
+  background-color: var(--primary-color);
+  border-radius: 1.5rem;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.actions :where(.container2) img {
+  aspect-ratio: 1/1;
+  width: 200px;
+}
+
+.actions :where(.container2) .view-btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+
+  border: none;
+  background-color: var(--secondary-color);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
